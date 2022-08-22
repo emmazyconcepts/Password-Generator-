@@ -8,11 +8,16 @@
 
   <body>
     <div class="generator">
-      <h1 style="color: azure">Password Generator 🔐</h1>
-      <input type="text" placeholder="Password" id="pass" />
+      <h1 style="color: azure; margin-bottom: 15px">Password Generator 🔐</h1>
+      <input
+        style="margin-bottom: 15px"
+        type="text"
+        placeholder="Password"
+        id="pass"
+      />
 
       <p id="pass-description"></p>
-      <div>
+      <div style="margin-bottom: 5px">
         <button onclick="generateRandom()">Generate Password</button>
         <button onclick="copyPass() ">copy</button>
       </div>
