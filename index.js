@@ -17,7 +17,5 @@ function generateRandom() {
 function copyPass() {
   if (pass != "") {
     navigator.clipboard.writeText(pass.value);
-  } else if (pass === "") {
-    alert("Passwords do not match");
   }
 }
