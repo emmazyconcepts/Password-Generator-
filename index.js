@@ -12,15 +12,12 @@ function generateRandom() {
   pass.value = password;
 
   return password;
-
-  //   let random = Math.floor(Math.random() * 100000000000000);
-  //   let ranchar = random * characters.length;
-  //   passwordText.innerHTML = random;
-  //   console.log(ranchar);
 }
 
 function copyPass() {
   if (pass != "") {
     navigator.clipboard.writeText(pass.value);
+  } else if (pass === "") {
+    alert("Passwords do not match");
   }
 }
