@@ -94,7 +94,7 @@ let characters = [
 ];
 
 function generateRandom() {
-  let random = Math.floor(Math.random() * 1000000000000000);
+  let random = Math.floor(Math.random() * 100000000000000);
   let ranchar = random * characters.length;
   passwordText.innerHTML = random;
   console.log(ranchar);
