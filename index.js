@@ -4,6 +4,7 @@ let characters =
 let pass = document.getElementById("pass");
 let passwordLen = document.getElementById("passlen");
 
+//this fuction generateRandom passwords
 function generateRandom() {
   let passwordLength = passwordLen.value;
   let password = "";
