@@ -16,6 +16,7 @@ function generateRandom() {
   return password;
 }
 
+//this function help you copy the password
 function copyPass() {
   if (pass != "") {
     navigator.clipboard.writeText(pass.value);
