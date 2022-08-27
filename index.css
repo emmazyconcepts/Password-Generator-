@@ -67,5 +67,20 @@ body {
   background: #576ca8;
 }
 
+.generator #btncp::before {
+  position: absolute;
+  content: "Copied";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #4dff4d;
+  transition: 0.2s linear;
+  z-index: -1;
+}
+
+.generator input.active ~ .buttons #btncp::before {
+  left: -70px;
+}
+
 h1 {
 }

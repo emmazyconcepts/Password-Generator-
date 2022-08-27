@@ -17,5 +17,9 @@ function generateRandom() {
 function copyPass() {
   if (pass != "") {
     navigator.clipboard.writeText(pass.value);
+    pass.classList.add("active");
+    setTimeout(() => {
+      pass.classList.remove("active");
+    }, 1000);
   }
 }
